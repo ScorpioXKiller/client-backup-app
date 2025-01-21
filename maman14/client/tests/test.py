@@ -5,7 +5,8 @@ def main():
     try:
         client.read_server_info()
         client.connect()
-        client.backup_file("maman14/demofile.txt")
+        client.request_save_file("maman14/modules.txt")
+        #client.backup_file("maman14/demofile.txt")
     except Exception as e:
         print(f"Unexpected error: {e}")
 
